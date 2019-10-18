@@ -1,0 +1,17 @@
+{
+    "name": "readGo",
+    "version": "1.0",
+    "description": "Real estate advertising extension with fully automated campaign features for the real estate agent on the go.",
+    "content_scripts": [{
+        "matches": ["<all_urls>"],
+        "js": ["getFormInfo.js"]
+    }],
+    "background": {
+        "scripts": ["background.js"]
+    },
+    "permissions": [
+        "webRequest",
+        "<all_urls>"
+    ],
+    "manifest_version": 2
+}
