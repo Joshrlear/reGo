@@ -15,6 +15,7 @@
     ],
     "browser_action": {
         "default_icon": "reGo_x128.png",
+        "default_popup": "index.html",
         "default_title": "Access your reGo Acount Info"
     },
     "manifest_version": 2
