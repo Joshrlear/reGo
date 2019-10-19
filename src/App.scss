@@ -1,5 +1,96 @@
+.popup {
+    width: 300px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.info_container {
+    .input_container {
+        padding: 5px 0px;
+    
+        .text {
+            padding-left: 5px;
+            display: initial;
+            &.hidden {
+                display: none;
+            }
+        }
+    
+        .input {
+            padding-left: 5px;
+            display: none;
+            &.active {
+                display: initial;
+            }
+        }
+    }
+}
+
+.image_section {
+    display: flex;
+    height: 200px;
+
+    .logo_container {
+        display: block;
+
+        .imgUpload_wrapper {
+            height: 50px;
+            width: 50px;
+            margin-top: 20px;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+    
+    .imgUpload_wrapper {
+        height: fit-content;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        input[type='file'] {
+            height:1rem;
+            width:1rem;
+            position:absolute;
+            right: -15%;
+            top:15%;
+            opacity:0;
+            z-index: 0;
+        }
+    
+        .edit_btn {
+            position:absolute;
+            right: -15%;
+            top:15%;
+            z-index: 1;
+        }
+    }
+
+    #profile_img_wrapper {
+        margin-left: calc(100% - 70px - 150px);
+        margin-top: 20px;
+
+        .profile_img {
+            width: 150px;
+            height: 150px;
+        }
+
+        .edit_btn {
+            right: -0.5rem;
+        }
+    }
+    
+}
+
 .edit_btn {
-    width: 1rem;
-    height: 1rem;
-    background-color: rgb(0, 174, 255);
+    font-size: 1rem;
+    color:rgb(0, 174, 255);
+    cursor: pointer;
+}
+
+.campaign_btn {
+    margin-top: 20px;
 }
