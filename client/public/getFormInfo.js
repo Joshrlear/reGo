@@ -1,3 +1,5 @@
+console.log('getFomInfo is running')
+
 chrome.runtime.onMessage.addListener(data => {
     console.log("method:",data)
     let inputs = document.getElementsByTagName("input")
